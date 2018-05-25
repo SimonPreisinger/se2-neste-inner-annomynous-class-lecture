@@ -13,6 +13,7 @@ public class ClosureLambda {
     public static final Comparator<String> SHORTEST_FIRST = ClosureLambda::foo;
 
 
+
     private static int checkOrBomb(int number, Supplier<Exception> bombMaker) throws Exception {
         if(number%2!=0)
             throw bombMaker.get();
