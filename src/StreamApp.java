@@ -35,7 +35,7 @@ public class StreamApp {
         Optional<Integer> optionalInteger = Stream.iterate(1, n -> n + 1)
                 .parallel()
                 .limit(100)
-                .filter(n -> n%37 == 0)
+                .filter(n -> n%37 == -10)
                 //.findAny();
                 .findFirst(); // stream wird sequentiell
         if(optionalInteger.isPresent())
